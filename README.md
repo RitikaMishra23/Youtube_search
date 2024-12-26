@@ -3,13 +3,13 @@
 This project provides an API to fetch the latest YouTube videos based on a predefined search query. The videos are fetched from the YouTube API and stored in a MongoDB database. The server periodically fetches new video data asynchronously, storing key information such as video title, description, publishing datetime, and thumbnail URLs. A paginated API allows users to query the database and retrieve the stored video data in reverse chronological order.
 
 ## Requirements
-Python 3.x
-Flask
-Flask-Async
-aiohttp
-pymongo
-dotenv
-MongoDB
+Python 3.x<br>
+Flask<br>
+Flask-Async<br>
+aiohttp<br>
+pymongo<br>
+dotenv<br>
+MongoDB<br>
 
 ## Installation
 ### Clone the Repository
@@ -67,6 +67,7 @@ Starts the process of fetching the latest videos from the YouTube API in the bac
 ## Results
 
 <img width="959" alt="1" src="https://github.com/user-attachments/assets/89f3855b-0b96-410a-bd54-f1b290e68ca6" />
+
 ![Untitled design (1)](https://github.com/user-attachments/assets/31d4ae0e-6af5-4b3f-9c9d-6c646c8f87f1)
 
 ![Untitled design (2)](https://github.com/user-attachments/assets/af39173b-4b48-44a4-a1af-a68dabc142a2)
