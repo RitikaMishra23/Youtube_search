@@ -1,8 +1,8 @@
 # README for YouTube Video Fetching API
-##Project Overview
+## Project Overview
 This project provides an API to fetch the latest YouTube videos based on a predefined search query. The videos are fetched from the YouTube API and stored in a MongoDB database. The server periodically fetches new video data asynchronously, storing key information such as video title, description, publishing datetime, and thumbnail URLs. A paginated API allows users to query the database and retrieve the stored video data in reverse chronological order.
 
-##Requirements
+## Requirements
 Python 3.x
 Flask
 Flask-Async
@@ -11,20 +11,19 @@ pymongo
 dotenv
 MongoDB
 
-##Installation
-###Clone the Repository
+## Installation
+### Clone the Repository
 
-```bash
-git clone (https://github.com/RitikaMishra23/Youtube_search.git)
 
-```bash
-cd YoutubeQuery pagination
+```git clone (https://github.com/RitikaMishra23/Youtube_search.git)```
 
-###Create a .env file with the following content:
+```cd YoutubeQuery pagination<br>```
 
-####YouTube data v3 API:<br>
+### Create a .env file with the following content:
+
+#### YouTube data v3 API:<br>
  https://developers.google.com/youtube/v3/getting-started .<br>
-####Search API reference:<br>
+#### Search API reference:<br>
  https://developers.google.com/youtube/v3/docs/search/list<br>
 To fetch the latest videos you need to specify these: type=video, order=date, publishedAfter=<SOME_DATE_TIME> <br>
 
@@ -40,35 +39,33 @@ Get MONGODB_URL - MONGO_URI=mongodb+srv://<Connection_String><br>
 MONGO_URI=<YOUR_MONGODB_URI> <br>
 Replace <YOUR_YOUTUBE_API_KEY> and <YOUR_MONGODB_URI> with your actual YouTube API key and MongoDB URI.<br>
 
-##Install Dependencies
+## Install Dependencies
 
 Install the required Python packages:
 
-```bash
-pip install -r requirements.txt
-###Run the Application
+```pip install -r requirements.txt```
+
+### Run the Application
 
 
-##API Endpoints
+## API Endpoints
 GET /fetch_data
 Fetches video data from the database in a paginated format. You can pass the page_number as a URL parameter to retrieve a specific page.
 
 Example:
 
-```bash
 
-GET /fetch_data?page_number=1<br>
-GET /search_videos/<keyword><br>
+```GET /fetch_data?page_number=1<br>```
+```GET /search_videos/<keyword><br>```
 Search videos based on the provided keyword in the video title or description.
 
 Example:
 
-```bash
-GET /search_videos/cricket
-GET /initiate_fetch
+```GET /search_videos/cricket```
+```GET /initiate_fetch```
 Starts the process of fetching the latest videos from the YouTube API in the background. This will fetch the latest videos and store them in the database.
 
-##Challenges
+## Challenges
 ### MongoDB server activation<br>
 It lead to 505 errors
 
