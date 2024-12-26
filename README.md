@@ -17,7 +17,7 @@ MongoDB<br>
 
 ```git clone (https://github.com/RitikaMishra23/Youtube_search.git)```
 
-```cd YoutubeQuery pagination<br>```
+```cd YoutubeQuery pagination```
 
 ### Create a .env file with the following content:
 
